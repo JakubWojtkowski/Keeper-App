@@ -3,12 +3,13 @@ import Header from "./Header";
 import Note from "./Note";
 import Footer from "./Footer";
 import notes from "../notes";
+import CreateArea from "./CreateArea";
 
 function App() {
     return (
         <div>
         <Header />
-
+        <CreateArea />
         {notes.map(noteItem => 
             <Note 
                 key={noteItem.key}
