@@ -1,6 +1,12 @@
 import React from "react";
 
 function CreateArea(){
+
+    const [note, setNote] = React.useState({
+        title: "",
+        content: ""
+    });
+
     return (
         <div>
             <form>
