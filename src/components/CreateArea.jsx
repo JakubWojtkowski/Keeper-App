@@ -20,6 +20,10 @@ function CreateArea(props){
 
     function submitNote(event) {
         props.onAdd(note);
+        setNote({
+            title: "",
+            content: ""
+        });
         event.preventDefault();
     }
 
@@ -37,6 +41,7 @@ function CreateArea(props){
                 name="content"
                 placeholder="Take a note..."
                 rows="3"
+                value={note.content}
             />
             <button onClick={submitNote} type="submit">Add</button>
         </form>
