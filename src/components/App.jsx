@@ -10,13 +10,14 @@ function App() {
         <div>
         <Header />
         <CreateArea />
-        {notes.map(noteItem => 
+        {/* {notes.map(noteItem => 
             <Note 
                 key={noteItem.key}
                 title={noteItem.title}
                 content={noteItem.content}    
             />
-        )}
+        )} */}
+        <Note />
         
         <Footer />
         </div>
