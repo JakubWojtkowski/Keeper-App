@@ -6,18 +6,17 @@ import notes from "../notes";
 import CreateArea from "./CreateArea";
 
 function App() {
+
+    function addNote(note) {
+    }
+
     return (
         <div>
         <Header />
-        <CreateArea />
-        {/* {notes.map(noteItem => 
-            <Note 
-                key={noteItem.key}
-                title={noteItem.title}
-                content={noteItem.content}    
-            />
-        )} */}
-        <Note />
+        <CreateArea 
+            onAdd={addNote}
+        />
+        <Note key={1} title="Note title" content="Note content"/>
         
         <Footer />
         </div>
